@@ -1,0 +1,38 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+#{menu id:"dashboard"/}
+<section class="ui segment">
+  <div class="ui four column stackable center aligned grid">
+    <div class="middle aligned row">
+      <div class="column">
+        <div class="ui icon header">
+
+          <i class="user circle icon"></i>
+        ${member.name}
+          <p> Age: ${member.age} </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui icon header">
+          <i class="heart icon"></i>BMI</i>
+        ${member.bmi}
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui icon header">
+          <i class="weight icon"></i>Ideal Body Weight</i>
+        ${member.isIdealBodyWeight}
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui icon header">
+          <i class="user md icon"></i>
+        ${member.bmiresult}
+        </div>
+      </div>
+    </div>
+  </div>
+
+#{listassessments member: member /}
+#{addassessments member: member/}
+</section>

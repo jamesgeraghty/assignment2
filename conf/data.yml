@@ -1,0 +1,74 @@
+Assessment(a1):
+  weight: 72.0
+  chest: 40.0
+  thigh: 23.3
+  upperArm: 15.0
+  waist: 32.0
+  hips: 28.0
+Assessment(a2):
+  weight: 72.0
+  chest: 40.0
+  thigh: 23.3
+  upperArm: 15.0
+  waist: 32.0
+  hips: 28.0
+Assessment(a3):
+  weight: 72.0
+  chest: 40.0
+  thigh: 23.3
+  upperArm: 15.0
+  waist: 32.0
+  hips: 28.0
+Assessment(a4):
+  weight: 35.0
+  chest: 40.0
+  thigh: 23.3
+  upperArm: 15.0
+  waist: 32.0
+  hips: 28.0
+Assessment(a5):
+  weight: 35.0
+  chest: 40.0
+  thigh: 23.3
+  upperArm: 15.0
+  waist: 32.0
+  hips: 28.0
+Assessment(a6):
+  weight: 69.0
+  chest: 40.0
+  thigh: 23.3
+  upperArm: 15.0
+  waist: 32.0
+  hips: 28.0
+
+Member(m1):
+  name: James gerghty
+  age: 30
+  email: james@geraghty.com
+  password: secret
+  weight: 30
+  height: 2.5
+  assessments:
+    - a1
+    - a2
+    - a3
+
+Member(m2):
+  name: Amy
+  age: 30
+  email: amy@johnson.com
+  password: secret
+  weight: 20
+  height: 1.5
+  assessments:
+    - a4
+    - a5
+    - a6
+
+
+Trainer(t1):
+  email: trainer@trainer.com
+  password: secret
+  members:
+    - m1
+    - m2

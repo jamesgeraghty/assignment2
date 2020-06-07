@@ -1,0 +1,46 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"admin"/}
+
+<section class="ui segment">
+    <h2 class="ui header">
+        All Assessments:
+    </h2>
+    <table class="ui celled table">
+        <thead>
+        <tr>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:assessments, as: 'assessment'}
+        <tr>
+            <td>
+            ${assessment.Weight}
+            </td>
+            <td>
+            ${assessment.chest}
+            </td>
+            <td>
+            ${assessment.thigh}
+            </td>
+            <td>
+            ${assessment.upperArm}
+            </td>
+            <td>
+            ${assessment.waist}
+            </td>
+            <td>
+            ${assessment.hips}
+            </td>
+        </tr>
+        #{/list}
+        </tbody>
+    </table>
+</section>

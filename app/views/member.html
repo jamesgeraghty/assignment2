@@ -1,0 +1,23 @@
+#{extends 'main.html' /}
+#{set title:'Member' /}
+
+#{menu id:"member"/}
+
+<section class="ui segment">
+
+        <div>
+            <h3 class="ui header">
+                <a href="/trainerdashboard" class="ui icon button">
+                    <i class="arrow alternate circle left outline small icon"></i>
+                </a> Member Dashboard
+            </h3>
+        </div>
+        </div>
+
+#{memberdetails member: member /}
+#{addassessments member:member /}
+#{addcomment member: member /}
+
+
+
+</section>
